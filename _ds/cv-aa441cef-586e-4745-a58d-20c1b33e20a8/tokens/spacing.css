@@ -1,0 +1,44 @@
+/* ============================================================
+   Supa Resume — Spacing, radius, shadow & layout tokens
+   4px base grid. Shadows are the soft black washes used across
+   cards; colored shadows live in colors.css.
+   ============================================================ */
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --sp-1: 2px;
+  --sp-2: 4px;
+  --sp-3: 6px;
+  --sp-4: 8px;
+  --sp-5: 12px;
+  --sp-6: 16px;
+  --sp-7: 20px;
+  --sp-8: 24px;
+  --sp-9: 32px;
+  --sp-10: 40px;
+  --sp-11: 48px;
+  --sp-12: 64px;
+
+  /* ---- Radius ---- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 10px;     /* default card radius                 */
+  --r-xl: 16px;
+  --r-2xl: 20px;
+  --r-pill: 100px;
+  --r-full: 9999px;
+
+  /* ---- Elevation (soft black washes from the .fig) ---- */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.06);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.10);
+  /* Skeuomorphic app-icon shadow: tight colored glow under tiles */
+  --shadow-icon: 0 4px 10px rgba(0,0,0,0.12);
+
+  /* ---- Layout ---- */
+  --resume-width: 1180px;
+  --aside-width: 320px;
+  --page-pad: 40px;
+  --section-gap: 48px;
+}

@@ -1,0 +1,99 @@
+/* ============================================================
+   Supa Resume — Color tokens
+   Extracted from "Supa Resume - Light & Dark" .fig
+   Two themes: light (default :root) and dark ([data-theme="dark"]).
+   ============================================================ */
+:root {
+  /* ---- Neutral ramp (ink) ---- */
+  --white:    #ffffff;
+  --ink-900:  #232339;  /* strongest headings            rgb(35,35,57)   */
+  --ink-800:  #2e2e48;  /* primary dark text / dark card  rgb(46,46,72)  */
+  --ink-600:  #47516b;  /* secondary text                 rgb(71,81,107) */
+  --ink-500:  #79819a;  /* body / muted text              rgb(121,129,154)*/
+  --ink-400:  #acb1c3;  /* faint text, captions           rgb(172,177,195)*/
+  --ink-300:  #d9dfe8;  /* quote text, light dividers     rgb(217,223,232)*/
+  --ink-200:  #e2e6ee;  /* default border                 rgb(226,230,238)*/
+  --ink-100:  #eef1f6;  /* soft border / hairline         rgb(238,241,246)*/
+  --ink-050:  #f4f6fb;  /* surface fill                   rgb(244,246,251)*/
+
+  /* ---- Brand accents ---- */
+  --blue-500:   #516cf7;  /* primary action / links   rgb(81,108,247)  */
+  --blue-300:   #95aafb;  /* soft blue                rgb(149,170,251) */
+  --violet-700: #5531a7;  /* deep violet              rgb(85,49,167)   */
+  --violet-500: #7b61ff;  /* brand violet / outline   rgb(123,97,255)  */
+  --violet-400: #c696fc;  /* lavender accent          rgb(198,150,252) */
+  --role-500:   #8b72e8;  /* job-title / role text                   */
+
+  /* ---- Semantic ---- */
+  --green-500:    #4ac06f;  /* success                rgb(74,192,111)  */
+  --green-600:    #61c454;  /* skill accent           rgb(97,196,84)   */
+  --green-bg:     #e7fae5;  /* success badge bg       rgb(231,250,229) */
+  --coral-500:    #ee6a5f;  /* coral icon             rgb(238,106,95)  */
+  --yellow-500:   #f5bd4f;  /* yellow icon            rgb(245,189,79)  */
+  --yellow-icon:  #f4ce10;  /* sun glyph              rgb(244,206,16)  */
+  --yellow-bg:    #fefcbf;  /* sun chip bg            rgb(254,252,191) */
+  --red-500:      #c7152a;  /* danger                 rgb(199,21,42)   */
+
+  /* ---- Skeuomorphic icon shadows (education / tools tiles) ---- */
+  --shadow-coral:  #ec6d62;
+  --shadow-yellow: #f5c451;
+  --shadow-green:  #68cc58;
+
+  /* ============ Semantic aliases (light) ============ */
+  --bg-page:        var(--white);
+  --bg-surface:     var(--ink-050);
+  --bg-surface-2:   var(--white);
+  --bg-inverse:     var(--ink-900);
+
+  --text-heading:   var(--ink-900);
+  --text-strong:    var(--ink-800);
+  --text-secondary: var(--ink-600);
+  --text-body:      var(--ink-500);
+  --text-muted:     var(--ink-400);
+  --text-faint:     var(--ink-300);
+  --text-role:      var(--role-500);
+  --text-on-accent: var(--white);
+
+  --border-default: var(--ink-200);
+  --border-soft:    var(--ink-100);
+
+  --accent:         var(--blue-500);
+  --accent-hover:   #3f57df;
+  --accent-soft:    var(--violet-400);
+  --link:           var(--blue-500);
+
+  --badge-success-bg:   var(--green-bg);
+  --badge-success-text: var(--green-500);
+
+  --avatar-ring: var(--ink-100);
+}
+
+/* ============ Dark theme ============ */
+[data-theme="dark"] {
+  --bg-page:        #232339;
+  --bg-surface:     #2e2e48;
+  --bg-surface-2:   #2e2e48;
+  --bg-inverse:     var(--white);
+
+  --text-heading:   #eef1f6;
+  --text-strong:    #eef1f6;
+  --text-secondary: #acb1c3;
+  --text-body:      #79819a;
+  --text-muted:     #79819a;
+  --text-faint:     #47516b;
+  --text-role:      var(--violet-400);
+  --text-on-accent: var(--white);
+
+  --border-default: #3a3a57;
+  --border-soft:    #34344f;
+
+  --accent:         var(--blue-500);
+  --accent-hover:   #6b82ff;
+  --accent-soft:    var(--violet-400);
+  --link:           var(--blue-300);
+
+  --badge-success-bg:   #1f5c43;
+  --badge-success-text: #c7f5c7;
+
+  --avatar-ring: #3a3a57;
+}

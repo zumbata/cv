@@ -1,0 +1,50 @@
+/* ============================================================
+   Supa Resume — Typography tokens
+   Display: Outfit  ·  Body: DM Sans  ·  Accent: Be Vietnam Pro
+   Sizes are the real-document scale (the .fig artboard is a
+   scaled thumbnail; these are the intended print/screen sizes).
+   ============================================================ */
+:root {
+  /* ---- Font families (also declared in fonts.css) ---- */
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-accent: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* ---- Weights ---- */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium: 500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold: 700; /* @kind font */
+
+  /* ---- Type scale ---- */
+  --fs-display: 34px;   /* name on resume                       */
+  --fs-h1: 30px;        /* section titles (Experience, Skills)  */
+  --fs-h2: 22px;        /* sub-headers / role                   */
+  --fs-h3: 18px;        /* card titles                          */
+  --fs-lg: 16px;        /* lead body                            */
+  --fs-body: 15px;      /* default body                         */
+  --fs-sm: 13px;        /* meta, dates, secondary               */
+  --fs-xs: 12px;        /* labels, badges                       */
+  --fs-2xs: 11px;       /* fine print / captions                */
+
+  /* ---- Line heights ---- */
+  --lh-tight: 1.1; /* @kind other */
+  --lh-snug: 1.3; /* @kind other */
+  --lh-normal: 1.5; /* @kind other */
+  --lh-relaxed: 1.65; /* @kind other */
+
+  /* ---- Letter spacing ---- */
+  --ls-tight: -0.02em;   /* display & section titles            */
+  --ls-normal: 0; /* @kind other */
+  --ls-wide: 0.04em;     /* uppercase labels                    */
+}
+
+/* ---- Optional helper classes (used by specimen cards) ---- */
+.t-display { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-display); line-height: var(--lh-tight); letter-spacing: var(--ls-tight); color: var(--text-heading); }
+.t-h1 { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-h1); line-height: var(--lh-tight); letter-spacing: var(--ls-tight); color: var(--text-heading); }
+.t-h2 { font-family: var(--font-display); font-weight: var(--fw-medium); font-size: var(--fs-h2); line-height: var(--lh-snug); color: var(--text-strong); }
+.t-h3 { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-h3); line-height: var(--lh-snug); color: var(--text-strong); }
+.t-body { font-family: var(--font-body); font-weight: var(--fw-regular); font-size: var(--fs-body); line-height: var(--lh-relaxed); color: var(--text-body); }
+.t-sm { font-family: var(--font-body); font-weight: var(--fw-regular); font-size: var(--fs-sm); line-height: var(--lh-normal); color: var(--text-secondary); }
+.t-label { font-family: var(--font-body); font-weight: var(--fw-medium); font-size: var(--fs-xs); line-height: 1; letter-spacing: var(--ls-wide); text-transform: uppercase; color: var(--text-muted); }
+.t-accent { font-family: var(--font-accent); font-weight: var(--fw-medium); font-size: var(--fs-xs); }
